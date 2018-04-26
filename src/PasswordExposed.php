@@ -2,17 +2,18 @@
 
 namespace DivineOmega\LaravelPasswordExposedValidationRule;
 
-use Illuminate\Contracts\Validation\Rule;
 use DivineOmega\PasswordExposed\PasswordExposedChecker;
 use DivineOmega\PasswordExposed\PasswordStatus;
+use Illuminate\Contracts\Validation\Rule;
 
 class PasswordExposed implements Rule
 {
     /**
      * Determine if the validation rule passes.
      *
-     * @param  string  $attribute
-     * @param  mixed  $value
+     * @param string $attribute
+     * @param mixed  $value
+     *
      * @return bool
      */
     public function passes($attribute, $value)
