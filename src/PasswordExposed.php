@@ -3,6 +3,7 @@
 namespace DivineOmega\LaravelPasswordExposedValidationRule;
 
 use Illuminate\Contracts\Validation\Rule;
+use DivineOmega\PasswordExposed\PasswordExposedChecker;
 use DivineOmega\PasswordExposed\PasswordStatus;
 
 class PasswordExposed implements Rule
