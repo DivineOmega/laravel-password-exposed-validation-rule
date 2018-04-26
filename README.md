@@ -1,7 +1,8 @@
 # 🔒 Laravel Password Exposed Validation Rule
 
-This package provides a Laravel validation rule that checks if a password has been exposed in a data breach. 
-It should work on Laravel 5.1 and above.
+This package provides a Laravel validation rule that checks if a password has been exposed in a data breach.
+
+Requires Laravel 5.1 or above.
 
 ## Installation
 
