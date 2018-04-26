@@ -1,10 +1,14 @@
 # 🔒 Laravel Password Exposed Validation Rule
 
-[![StyleCI](https://styleci.io/repos/131214375/shield?branch=master)](https://styleci.io/repos/131214375)
-
 This package provides a Laravel validation rule that checks if a password has been exposed in a data breach.
 
-Requires Laravel 5.1 or above.
+<p align="center">
+    <img src="assets/images/laravel-password-exposed.png">
+</p>
+
+<p align="center">
+    <a href="https://styleci.io/repos/131214375"><img src="https://styleci.io/repos/131214375/shield?branch=master" alt="StyleCI"></a>
+</p>
 
 ## Installation
 
@@ -13,6 +17,8 @@ To install, just run the following Composer command.
 ```
 composer require divineomega/laravel-password-exposed-validation-rule
 ```
+
+Please note that this package requires Laravel 5.1 or above.
 
 ## Usage
 
