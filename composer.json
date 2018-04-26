@@ -1,0 +1,21 @@
+{
+    "name": "divineomega/laravel-password-exposed-validation-rule",
+    "description": "Laravel validation rule that checks if a password has been exposed in a data breach",
+    "type": "library",
+    "require": {
+        "divineomega/password_exposed": "^2.5",
+        "illuminate/contracts": "^5.1"
+    },
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jordan Hall",
+            "email": "jordan@hall05.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DivineOmega\\LaravelPasswordExposedValidationRule\\": "./src/"
+        }
+    }
+}
