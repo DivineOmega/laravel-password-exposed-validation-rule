@@ -8,6 +8,7 @@ This package provides a Laravel validation rule that checks if a password has be
 
 <p align="center">
     <a href="https://styleci.io/repos/131214375"><img src="https://styleci.io/repos/131214375/shield?branch=master" alt="StyleCI"></a>
+    <img src="https://img.shields.io/packagist/dt/divineomega/laravel-password-exposed-validation-rule.svg"/>
 </p>
 
 ## Installation
