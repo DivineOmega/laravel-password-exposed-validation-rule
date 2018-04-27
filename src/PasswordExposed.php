@@ -20,11 +20,7 @@ class PasswordExposed implements Rule
     {
         $passwordStatus = (new PasswordExposedChecker())->passwordExposed($value);
 
-        if ($passwordStatus === PasswordStatus::EXPOSED) {
-            return false;
-        }
-
-        return true;
+        return $passwordStatus !== PasswordStatus::EXPOSED;
     }
 
     /**
