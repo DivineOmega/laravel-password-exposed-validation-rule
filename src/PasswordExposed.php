@@ -8,6 +8,17 @@ use Illuminate\Contracts\Validation\Rule;
 
 class PasswordExposed implements Rule
 {
+    private $passwordExposedChecker;
+
+    public function __construct(PasswordExposedChecker $passwordExposedChecker = null)
+    {
+        if (!$passwordExposedChecker) {
+            $passwordExposedChecker = new PasswordExposedChecker();
+        }
+
+        $this->passwordExposedChecker = $passwordExposedChecker;
+    }
+
     /**
      * Determine if the validation rule passes.
      *
@@ -18,7 +29,7 @@ class PasswordExposed implements Rule
      */
     public function passes($attribute, $value)
     {
-        $passwordStatus = (new PasswordExposedChecker())->passwordExposed($value);
+        $passwordStatus = $this->passwordExposedChecker->passwordExposed($value);
 
         return $passwordStatus !== PasswordStatus::EXPOSED;
     }
