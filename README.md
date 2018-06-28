@@ -1,6 +1,6 @@
 # 🔒 Laravel Password Exposed Validation Rule
 
-This package provides a Laravel validation rule that checks if a password has been exposed in a data breach.
+This package provides a Laravel validation rule that checks if a password has been exposed in a data breach (which it figures out by using [`divineomega/password_exposed`](https://github.com/DivineOmega/password_exposed) that calls the haveibeenpwned.com API).
 
 <p align="center">
     <img src="assets/images/laravel-password-exposed.png">
