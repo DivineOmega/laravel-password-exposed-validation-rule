@@ -32,3 +32,4 @@ $request->validate([
     'password' => ['required', new PasswordExposed],
 ]);
 ```
+**It is also worth noting that due to the underlying API calls, your environment will need a working SSL certificate**
