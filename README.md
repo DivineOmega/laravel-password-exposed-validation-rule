@@ -29,6 +29,16 @@ The following code snippet shows an example of how to use the password exposed v
 use DivineOmega\LaravelPasswordExposedValidationRule\PasswordExposed;
 
 $request->validate([
-    'password' => ['required', new PasswordExposed],
+    'password' => ['required', new PasswordExposed()],
+]);
+```
+
+If you wish, you can also set a custom validation message, as shown below.
+
+```php
+use DivineOmega\LaravelPasswordExposedValidationRule\PasswordExposed;
+
+$request->validate([
+    'password' => ['required', (new PasswordExposed())->setMessage('This password is not secure.')],
 ]);
 ```
