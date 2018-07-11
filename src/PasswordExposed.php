@@ -9,6 +9,7 @@ use Illuminate\Contracts\Validation\Rule;
 class PasswordExposed implements Rule
 {
     private $passwordExposedChecker;
+    private $message = 'The :attribute has been exposed in a data breach.';
 
     public function __construct(PasswordExposedChecker $passwordExposedChecker = null)
     {
@@ -41,6 +42,19 @@ class PasswordExposed implements Rule
      */
     public function message()
     {
-        return 'The :attribute has been exposed in a data breach.';
+        return $this->message;
+    }
+    
+    /**
+     * Set a custom validation error message.
+     *
+     * @param string $customMessage
+     *
+     * @return \DivineOmega\LaravelPasswordExposedValidationRule\PasswordExposed
+     */
+    public function setMessage($message)
+    {
+        $this->message = $message;
+        return $this;
     }
 }
