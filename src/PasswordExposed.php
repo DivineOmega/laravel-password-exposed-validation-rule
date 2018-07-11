@@ -44,7 +44,7 @@ class PasswordExposed implements Rule
     {
         return $this->message;
     }
-    
+
     /**
      * Set a custom validation error message.
      *
@@ -55,6 +55,7 @@ class PasswordExposed implements Rule
     public function setMessage($message)
     {
         $this->message = $message;
+
         return $this;
     }
 }
