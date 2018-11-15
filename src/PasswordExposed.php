@@ -8,8 +8,7 @@ use DivineOmega\PasswordExposed\PasswordStatus;
 use Illuminate\Contracts\Validation\Rule;
 
 /**
- * Class PasswordExposed
- * @package DivineOmega\LaravelPasswordExposedValidationRule
+ * Class PasswordExposed.
  */
 class PasswordExposed implements Rule
 {
@@ -24,6 +23,7 @@ class PasswordExposed implements Rule
 
     /**
      * PasswordExposed constructor.
+     *
      * @param PasswordExposedChecker|null $passwordExposedChecker
      */
     public function __construct(PasswordExposedChecker $passwordExposedChecker = null)

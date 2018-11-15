@@ -6,8 +6,7 @@ use DivineOmega\DOFileCachePSR6\CacheItemPool;
 use DivineOmega\PasswordExposed\PasswordExposedChecker;
 
 /**
- * Class PasswordExposedCheckerFactory
- * @package DivineOmega\LaravelPasswordExposedValidationRule\Factories
+ * Class PasswordExposedCheckerFactory.
  */
 class PasswordExposedCheckerFactory
 {
