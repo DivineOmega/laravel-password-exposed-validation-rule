@@ -2,19 +2,35 @@
 
 namespace DivineOmega\LaravelPasswordExposedValidationRule;
 
+use DivineOmega\LaravelPasswordExposedValidationRule\Factories\PasswordExposedCheckerFactory;
 use DivineOmega\PasswordExposed\PasswordExposedChecker;
 use DivineOmega\PasswordExposed\PasswordStatus;
 use Illuminate\Contracts\Validation\Rule;
 
+/**
+ * Class PasswordExposed
+ * @package DivineOmega\LaravelPasswordExposedValidationRule
+ */
 class PasswordExposed implements Rule
 {
+    /**
+     * @var PasswordExposedChecker
+     */
     private $passwordExposedChecker;
+    /**
+     * @var string
+     */
     private $message = 'The :attribute has been exposed in a data breach.';
 
+    /**
+     * PasswordExposed constructor.
+     * @param PasswordExposedChecker|null $passwordExposedChecker
+     */
     public function __construct(PasswordExposedChecker $passwordExposedChecker = null)
     {
         if (!$passwordExposedChecker) {
-            $passwordExposedChecker = new PasswordExposedChecker();
+            $factory = new PasswordExposedCheckerFactory();
+            $passwordExposedChecker = $factory->instance();
         }
 
         $this->passwordExposedChecker = $passwordExposedChecker;
