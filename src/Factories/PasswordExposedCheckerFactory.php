@@ -36,7 +36,7 @@ class PasswordExposedCheckerFactory
         if (function_exists('storage_path')) {
             return storage_path('password-exposed-cache/');
         }
-            
+
         return sys_get_temp_dir().'/password-exposed-cache/';
     }
 }
