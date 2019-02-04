@@ -3,6 +3,7 @@
     "description": "Laravel validation rule that checks if a password has been exposed in a data breach",
     "type": "library",
     "require": {
+        "php": "^7.1",
         "divineomega/password_exposed": "^2.5||^3.0",
         "illuminate/contracts": "^5.1"
     },
