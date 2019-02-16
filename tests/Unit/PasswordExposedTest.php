@@ -2,8 +2,8 @@
 
 namespace Tests\Unit;
 
-use PHPUnit\Framework\TestCase;
 use DivineOmega\LaravelPasswordExposedValidationRule\PasswordExposed;
+use PHPUnit\Framework\TestCase;
 
 class PasswordExposedTest extends TestCase
 {
