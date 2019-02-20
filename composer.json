@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.1",
-        "divineomega/password_exposed": "^3.0",
+        "divineomega/password_exposed": "^3.0.1",
         "illuminate/contracts": "^5.1"
     },
     "license": "LGPL-3.0-only",
