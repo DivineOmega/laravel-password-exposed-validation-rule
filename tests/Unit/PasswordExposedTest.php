@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class PasswordExposedTest extends TestCase
 {
-    public function setUp() : void
+    public function setUp(): void
     {
         $this->passwordExposed = new PasswordExposed();
     }
