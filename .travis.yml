@@ -1,5 +1,5 @@
 language: php
-distro: focal
+distro: bionic
 php:
   - '7.1'
   - '7.2'
