@@ -1,4 +1,5 @@
 language: php
+distro: focal
 php:
   - '7.1'
   - '7.2'
